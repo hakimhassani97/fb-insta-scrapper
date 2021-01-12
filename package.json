@@ -1,0 +1,25 @@
+{
+  "name": "fb-insta-scrapper",
+  "version": "1.0.0",
+  "description": "a nodejs app to scrape Facebook and Intagram posts and comments and store them in mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakimhassani97/fb-insta-scrapper.git"
+  },
+  "keywords": [
+    "web",
+    "scrapping",
+    "puppeteer",
+    "nodejs"
+  ],
+  "author": "hakimhassani97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakimhassani97/fb-insta-scrapper/issues"
+  },
+  "homepage": "https://github.com/hakimhassani97/fb-insta-scrapper#readme"
+}
