@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/hakimhassani97/fb-insta-scrapper/issues"
   },
-  "homepage": "https://github.com/hakimhassani97/fb-insta-scrapper#readme"
+  "homepage": "https://github.com/hakimhassani97/fb-insta-scrapper#readme",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  }
 }
