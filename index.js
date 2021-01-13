@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 (async () => {
     // set some options (set headless to false so we can see 
     // this automated browsing experience)
-    let launchOptions = { headless: false, args: ['--start-maximized'] };
+    let launchOptions = { headless: true, args: ['--start-maximized'] };
 
     const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
@@ -80,13 +80,13 @@ const puppeteer = require('puppeteer');
     });
 
     // get bio description
-    let bio = await page.evaluate(() => {
-        if (document.querySelectorAll('header h1')[1].parentNode.querySelectorAll('span')[0]) {
-            return document.querySelectorAll('header h1')[1].parentNode.querySelectorAll('span')[0].textContent;
-        } else {
-            return '';
-        }
-    });
+    // let bio = await page.evaluate(() => {
+    //     if (document.querySelectorAll('header h1')[1].parentNode.querySelectorAll('span')[0]) {
+    //         return document.querySelectorAll('header h1')[1].parentNode.querySelectorAll('span')[0].textContent;
+    //     } else {
+    //         return '';
+    //     }
+    // });
 
     // get bio URL
     let bioUrl = await page.evaluate(() => {
@@ -153,7 +153,7 @@ const puppeteer = require('puppeteer');
         'followers_count': followersCount,
         'followings_count': followingsCount,
         'name': name,
-        'bio': bio,
+        // 'bio': bio,
         'bio_url': bioUrl,
         'bio_url_display': bioUrlDisplay,
         'is_private_account': isPrivateAccount,
