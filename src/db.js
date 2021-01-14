@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 
 let client;
 const dbName = 'kaisens';
-const uri = "mongodb+srv://hakimhassani97:hakimhassani97@cluster0.l82vx.mongodb.net/"+dbName+"?retryWrites=true&w=majority"
+const uri = "mongodb+srv://<password>:<username>@cluster0.l82vx.mongodb.net/"+dbName+"?retryWrites=true&w=majority"
 
 async function listDatabases(client){
     databasesList = await client.db().admin().listDatabases();
