@@ -23,8 +23,8 @@ const {insert} = require('./src/db');
     });
     // await page.screenshot({path: '1.png'});
     // await page.waitForSelector('[name=username]');
-    await page.type('[name=username]', 'softlycreations@gmail.com');
-    await page.type('[name=password]', 'softly1234');
+    await page.type('[name=username]', '******@gmail.com');
+    await page.type('[name=password]', '******');
     // await page.screenshot({path: '2.png'});
     await page.click('[type=submit]');
     // // wait(7000)
